@@ -9,10 +9,12 @@
     <script src="https://kit.fontawesome.com/7351777d54.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="static/css/styles.css">
     <script defer src="static/js/menu-bar.js"></script>
+    <script defer src="static/js/change-level.js"></script>
 </head>
 
 <body>
     <header class="menu">
+        <!--start burguer menu-->
         <i class="fa-solid fa-bars icon" id="menu-icon"></i>
         <div class="menu-collapsed" id="menu-collapsed">
             <i class="fa-solid fa-xmark xmark" id="xmark"></i>
@@ -40,51 +42,110 @@
                 </li>
             </ul>
         </div>
+        <!--End Burguer menu-->
     </header>
+    <!--Start video section-->
     <div class="overflow"></div>
     <div class="overflow-menu" id="overflow-menu"></div>
     <div class="video">
         <video class="video-bg" src="static/content/video1.mp4" autoplay loop muted preload></video>
     </div>
     <h1 class="cyberSec">Aprenda Hacking do básico ao avançado</h1>
-    <i class="fa-solid fa-caret-down swip"></i>
+    <a href="#scroll1"><i class="fa-solid fa-caret-down swip"></i></a>
     <p class="scrolldown">Role para saber mais</p>
+    <!--End Video section-->
     <main>
-        <div class="feature-item feature-item1">
-            <h2>Conteúdo para todos</h2>  
-                <p>Sua idade não importa, nem seu conhecimento, nosso curso fornece conteúdo do básico ao avançado, tudo isso em um ambiente exclusivo e inovador.</p>
+        <!--start content-->
+        <div class="feature-item feature-item1" id="scroll1">
+            <h2>Conteúdo para todos</h2>
+            <p>Sua idade não importa, nem seu conhecimento, nosso curso fornece conteúdo do básico ao avançado, tudo
+                isso em um ambiente exclusivo e inovador.</p>
 
-                <div class="feature-content">
-                    <br><p>Nosso curso é baseado em um repositório privado github, aonde temos um guia de estudo desde o básico até o avançado, o guia é um documento de texto no qual organizamos todo o conteúdo postado em ordem (do mais básico até o mais avançado)</p>
-                    <div class="content-level">
-                        <ul>
-                            <li>Básico</li>
-                            <li>Intermediário</li>
-                            <li>Avançado</li>
-                        </ul>
+            <div class="feature-content">
+                <br>
+                <p>Nosso curso é baseado em um repositório privado hospedado no github, aonde temos um guia de estudo
+                    desde o básico até o avançado, o guia é um documento de texto no qual organizamos todo o conteúdo
+                    postado em ordem(do mais básico até o mais avançado)</p>
+                <!--start content menu-->
+                <div class="content-level">
+                    <button id="basic">Básico</button>
+                    <button id="intermediary">Intermediário</button>
+                    <button id="advanced">Avançado</button>
+                </div>
+                <!--end content menu-->
+                <div class="button-content">
+                    <div class="image" id="basiclevel">
+                        <!--Start Basic content-->
+                        <img class="img" src="static/content/cybersecintro.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/linuxintro.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/intronetwork.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/osint.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/cripto.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/owasp.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/darkwebintro.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/programacaointro.png" width="40%" height="100px" alt="">
+                        <!--End Basic content-->
                     </div>
                 </div>
-                <!--Make content map-->
-            <div class="feature-item feature-item2">
-                <h2>Suporte personalizado</h2>
-                <p>Nossa equipe está sempre disponível para ajudar, garantindo que você não fique preso em nenhum momento do curso.</p>
+                <div class="button-content">
+                    <!--Start intermediary content-->
+                    <div class="image" id="interlevel">
+                        <img class="img" src="static/content/penetartiontesting.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/passwordcrack.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/vuln-systems.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/malware.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/LGPD.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/intrusao.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/cybercrime.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/socialengineering.png" width="40%" height="100px" alt="">
+                        <!--End intermediary content-->
+                    </div>
+                </div>
+                <div class="button-content">
+                    <div class="image" id="advlevel">
+                        <img class="img" src="static/content/exploiting.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/bufferOver.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/threathunting.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/obfusque.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/pentestprogram.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/recdata.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/forense.png" width="40%" height="100px" alt="">
+                        <img class="img" src="static/content/websec.png" width="40%" height="100px" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="feature-item feature-item3">
-                <h2>Atualizações constantes</h2>
-                <p>Mantenha-se atualizado com as últimas tendências e técnicas da cibersegurança, garantindo que você esteja sempre à frente.</p>
+            <!--Make content map-->
+            <div class="benefit-div">
+                <h2>Vantagens</h2>
+                <div class="separate"></div>
+                <div class="benefits">
+                    <div class="benefit-container">
+                        <h3>Suporte completo e vitalício</h3>
+                        <img src="static/content/support.png" width="150px" alt="">
+                    </div>
+                    <div class="benefit-container">
+                        <h3>Sistemas mal configurados para prática</h3>
+                        <img src="static/content/prática.png" width="150px" alt="">
+                    </div>
+                </div>
             </div>
         </div>
 
-        <h2>O que você vai aprender?</h2>
-        <ul>
-            <li>Proteção avançada: Domine as técnicas para proteger sistemas contra invasões e ameaças virtuais.</li>
-            <li>Hacking ético: Aprenda a pensar como um hacker para defender sistemas de maneira eficaz.</li>
-            <li>Desenvolvimento de habilidades: Aprofunde seus conhecimentos em programação em C++, C e Python para criar soluções seguras e eficientes.</li>
-        </ul>
+        <div class="feature-item feature-itemb">
 
+            <h2>O que você vai aprender?</h2>
+            <ul>
+                <li>Proteção avançada: Domine as técnicas para proteger sistemas contra invasões e ameaças virtuais.
+                </li>
+                <li>Hacking ético: Aprenda a pensar como um hacker para defender sistemas de maneira eficaz.</li>
+                <li>Desenvolvimento de habilidades: Aprofunde seus conhecimentos em programação em C++, C e Python para
+                    criar soluções seguras e eficientes.</li>
+            </ul>
+        </div>
+        <div class="differentiation feature-itemb">
         <h2>O que nos faz diferente?</h2>
-        <div class="differentiation">
-            <p>Temos algumas características que nos diferenciam de outros cursos com o mesmo conteúdo e 3x mais caros:</p>
+            <p>Temos algumas características que nos diferenciam de outros cursos com o mesmo conteúdo e 3x mais caros:
+            </p>
             <ul>
                 <li>Formato moderno, simples e confiável.</li>
                 <li>Repositório privado no GitHub Organizações:</li>
@@ -96,6 +157,7 @@
             </ul>
         </div>
     </main>
+    <!--start CTA session-->
     <section class="cta-session">
         <h2>Comprar curso</h2>
         <p>Adquira o curso CyberSec Unlocked e inicie sua carreira na cibersegurança!</p>
@@ -106,6 +168,7 @@
             <button class="button-cta">Compre agora</button>
         </div>
     </section>
+    <!--end CTA Session-->
 </body>
 
 </html>

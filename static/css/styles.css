@@ -19,9 +19,14 @@
     font-family: "Prompt", sans-serif;
     src: url(../fonts/Prompt/Prompt-Thin.ttf);
 }
+html{
+    scroll-behavior: smooth;
+}
+
 :root {
     --black: #000000;
     --black-smooth: rgb(22, 21, 21);
+    --black-border: rgba(45, 45, 45, 0.801);
     --cyan-bluish-gray: #abb8c3;
     --white: #ffffff;
     --pale-pink: #f78da7;
@@ -108,16 +113,12 @@
   }
   
 * {
+    color: var(--cyan-bluish-gray);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
-/*
-html{
-    display: none;
-}
-*/
 body {
     background-color: var(--black);
     color: var(--white);
@@ -253,6 +254,10 @@ body {
     font-size: 3em;
     animation: moveUpDown 2s ease-in-out infinite;
 }
+a .swip{
+    color: white;
+
+}
 .scrolldown{
     position: absolute;
     top: 70%;
@@ -284,16 +289,6 @@ main {
         0 0 10px var(--accent-color),
         0 0 15px var(--accent-color);
 }
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
 
 p {
     margin: var(--spacing-20) var(--spacing-12);
@@ -316,10 +311,15 @@ ul > ul {
 }
 
 .cta-session {
+    position: absolute;
     margin: var(--spacing-25);
+    top: 400%;
+}
+.feature-item{
+    overflow: hidden;
 }
 .feature-item1{
-    width: 100% ;
+    width: 100%;
     height: 100vh;
 }
 .feature-item h2{
@@ -332,24 +332,110 @@ ul > ul {
 }
 .feature-item p{
     font-family: var(--font-prompt);
-    margin: 0 5px 0 30px;
+    margin: 0 45px 0 30px;
     font-size: 14px;
     letter-spacing: 0.08em;
     text-align: center;
 }
-.feature-content .content-level ul{
-    position: relative;
-    text-align: center;    
-    margin-top: 20px;
-    font-family: var(--font-prompt);
+.feature-content .content-level{
+    position: absolute;
+    top: 155%;
+    width: 100%;
+    border-bottom: 1px solid var(--vivid-cyan-blue);
     overflow: hidden;
-    
-    
-}
-.feature-content .content-level ul li{
-    padding: 20px;
-    display: inline;
-}
-.feature-conten .content-level ul li:hover{
 
+}
+.feature-content .content-level button {
+    overflow: hidden;
+    position: relative; 
+    padding: 20px;
+    display: inline;    
+    width: 30%;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    padding-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 15px 0 15px 5px;
+    font-size: 1em;
+    transition: color 0.5s ease-in;
+}
+.feature-content .content-level button:after{
+    margin-bottom: -10px;
+    content: "";
+    position: absolute;
+    background-color: var(--pale-cyan-blue);
+    height: 20px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 1s;
+}
+.feature-content .content-level button:hover:after{
+    width: 100%;
+}
+.feature-content .button-content{
+    width: 100vw;
+    height: 100vh;
+}
+.text{
+    margin: 200px;
+    position: absolute;
+    top: 140%;
+}
+.image{
+    transition: opacity 0.6s ease-in-out;
+    position: absolute;
+    top: 170%;
+}
+.img{
+    border-radius: 5px;
+    transition: filter 0.5s ease, transform 0.7s ease-in;
+    margin: 15px 30px 0 10px;
+    z-index: -1;
+    cursor: pointer;
+}
+.img:hover{
+    filter: brightness(1.5);
+    transform: scale(1.07);
+}
+.benefit-div{
+    position: absolute;
+    top: 260%;
+}
+.benefit-div h2{
+    color: var(--white);
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+.separate{
+    margin-left: 20px;
+    width: 80vw;
+    height: 1px;
+    background-color: var(--vivid-purple);
+}
+.feature-itemb{
+    position: absolute;
+    top: 350%;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 80vh;
+    margin-top: 15px;
+}
+
+.benefit-container { 
+    height: calc(40vh - 10px); /* Ajuste a altura do container */
+    width: calc(50% - 10px); /* Ajuste a largura do container */
+    text-align: center;
+    border: 2px solid var(--vivid-purple);
+    border-radius: 3px;
+    margin-bottom: 20px; /* Adicione uma margem entre os containers */
+    box-sizing: border-box; /* Garante que a borda esteja dentro do tamanho do container */
 }
