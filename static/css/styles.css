@@ -282,9 +282,10 @@ body {
 }
 
 .swip {
+    display: flex;
+    justify-content: center;
     position: absolute;
     top: 75%;
-    left: 45%;
     z-index: var(--z-index-video-div);
     overflow: hidden;
     cursor: pointer;
@@ -295,19 +296,16 @@ body {
 
 a .swip {
     color: white;
-
+    width: 100%;
 }
 
 .scrolldown {
+    display: flex;
+    justify-content: center;
     position: absolute;
     top: 70%;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    transform: translate(-50%);
     font-size: 1.2em;
-    width: 80%;
-    padding-left: 30px;
+    width: 100%;
     z-index: var(--z-index-video-div);
     font-family: var(--font-heading);
     font-size: var(--font-size-small);
