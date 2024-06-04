@@ -500,7 +500,7 @@ ul>ul {
 
 .benefit-div {
     position: absolute;
-    top: 305%;
+    top: 285%;
 }
 
 .benefit-div h2 {
@@ -535,13 +535,13 @@ ul>ul {
     flex-wrap: wrap;
     width: 100vw;
     height: 200vh;
-    margin-top: 15px;
-    padding-bottom: 400px;
+    margin-top: 25px;
+    padding-bottom: 620px;
 }
 .benefit-container {
     width: 70%;
     height: 150px;
-    margin: 0 45px;
+    margin: 0px 45px;
     padding: 5px;
     text-align: center;
     font-family: var(--font-reddit-mono);
