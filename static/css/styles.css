@@ -421,7 +421,7 @@ ul>ul {
     width: 100%;
     border-bottom: 1px solid var(--vivid-cyan-blue);
     overflow: hidden;
-
+    text-align: center;
 }
 
 .feature-content .content-level button {
